@@ -1,4 +1,5 @@
 import aQute.bnd.build.Workspace
+logging.captureStandardOutput LogLevel.INFO
 
 defaultTasks 'clean', 'bndbuild'
 
@@ -27,6 +28,30 @@ task generatesettings << {
 
         settingsFile << "'$item'"
     }
+}
+
+task release() << {
+    delete "release"
+
+    ant.taskdef(name: 'bndrelease', classname: 'aQute.bnd.ant.RunconfigToDistributionTask', classpath: 'cnf/buildplugins/biz.aQute.bnd/biz.aQute.bnd-2.2.0.jar')
+    ant.bndrelease(allowsnapshots: true, bndfile: 'run/webshop.bndrun', rootdir: './', outputdir: 'release')   
+
+    delete fileTree(dir: 'release', includes: ['org.apache.felix.configadmin*', 'org.apache.felix.fileinstall*', 'org.amdatu.core.fileinstall.metatype*', 'osgi.cmpn*', 'org.apache.felix.dependencymanager-*', 'org.apache.felix.eventadmin*', 'org.amdatu.web.rest.doc.swagger*'])
+}
+
+task prepareObrRelease(dependsOn: release) << {
+    delete "obrrelease"
+    new File('obrrelease').mkdirs()
+}
+
+task obrRelease(type: Copy, dependsOn: release) {
+    def tree = fileTree('.') {
+        include '**/generated/*.jar'
+        exclude '**/*.test'
+    }
+    
+    from tree.files into 'release'
+    
 }
 
 Workspace workspace
@@ -64,7 +89,23 @@ subprojects { p ->
     dependencies.add('testCompile', 'junit:junit:4.+')
 
     task bndbuild << { task ->
+    
+        if(!new File(p.projectDir, 'bin').exists()) {
+            mkdir('bin')
+        }
+
+
         bndProject.build()
+        bndProject.getWarnings().each {
+            logger.warn it
+        }
+
+        bndProject.getErrors().each {
+            logger.error it
+        }
+        if(bndProject.getErrors()) {
+            throw new  GradleException("Bnd build failure. Check build logs for error messages")
+        }
     }
 
     bndbuild.dependsOn(['compileJava','processResources'])

@@ -1,1 +1,3 @@
 run/generated
+.gradle
+settings.gradle
