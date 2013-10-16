@@ -11,5 +11,6 @@ Private-Package: webshop.search.test
 	org.apache.felix.dependencymanager,\
 	webshop.search.api;version=latest,\
 	org.mongodb.mongo-java-driver,\
-	org.amdatu.mongo
+	org.amdatu.mongo,\
+	webshop.products.api;version=latest
 -runsystempackages: sun.reflect

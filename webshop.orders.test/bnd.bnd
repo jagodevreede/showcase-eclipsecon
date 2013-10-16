@@ -12,5 +12,6 @@ Private-Package: webshop.orders.tests
 	org.apache.felix.dependencymanager,\
 	org.amdatu.bndtools.test,\
 	org.mongodb.mongo-java-driver,\
-	org.amdatu.mongo
+	org.amdatu.mongo,\
+	webshop.customers.api;version=latest
 -runsystempackages: sun.reflect
