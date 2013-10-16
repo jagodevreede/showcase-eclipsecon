@@ -1,0 +1,13 @@
+<div class="navbar">
+	  <div class="navbar-inner">
+	    <a class="brand" href="#">Fancy Modularity Showcase</a>
+	    <ul class="nav">
+	      <li><a href="#/products">Fancy Shop</a></li>	      
+		  <li ng-repeat="category in categories"><a href="#/products/{{category}}">{{category}}</a></li>
+		  <li><a href="#/basket"><i class="icon-shopping-cart"></i> Fancy Checkout <span class="badge">{{basket.size()}}</span></a></li>
+		  <li><a href="#/orders"><i class="icon-tasks"></i> My fancy orders</a></li>
+		  <input type="text" class="search-query" placeholder="Fancy search" ng-model="search">
+	  </ul>
+
+  </div>
+</div>

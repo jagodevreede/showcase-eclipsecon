@@ -1,0 +1,3 @@
+Include-Resource: admin/ui=static
+X-Web-Resource: /admin/ui
+X-Web-Resource-Version: 1.0

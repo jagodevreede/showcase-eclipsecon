@@ -1,0 +1,2 @@
+Private-Package: webshop.search.rest
+Bundle-Activator: webshop.search.rest.Activator

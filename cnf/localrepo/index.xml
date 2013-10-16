@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<repository increment='1371242533305' name='Local' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='junit.osgi'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='3.8.2'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='3de9cc9e394497a8edae493eab6b1894eb52f5c758159fa7edced25ac0be41bf'/>
+      <attribute name='url' value='junit.osgi/junit.osgi-3.8.2.jar'/>
+      <attribute name='size' type='Long' value='123155'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='junit.osgi'/>
+      <attribute name='bundle-version' type='Version' value='3.8.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='junit.osgi'/>
+      <attribute name='bundle-version' type='Version' value='3.8.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='junit.swingui.icons'/>
+      <attribute name='version' type='Version' value='3.8.2'/>
+      <attribute name='bundle-symbolic-name' value='junit.osgi'/>
+      <attribute name='bundle-version' type='Version' value='3.8.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='junit.swingui'/>
+      <attribute name='version' type='Version' value='3.8.2'/>
+      <attribute name='bundle-symbolic-name' value='junit.osgi'/>
+      <attribute name='bundle-version' type='Version' value='3.8.2'/>
+      <directive name='uses' value='javax.swing,junit.runner,javax.swing.border,junit.framework,javax.swing.event,javax.swing.tree,junit.extensions'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='junit.framework'/>
+      <attribute name='version' type='Version' value='3.8.2'/>
+      <attribute name='bundle-symbolic-name' value='junit.osgi'/>
+      <attribute name='bundle-version' type='Version' value='3.8.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='junit.runner'/>
+      <attribute name='version' type='Version' value='3.8.2'/>
+      <attribute name='bundle-symbolic-name' value='junit.osgi'/>
+      <attribute name='bundle-version' type='Version' value='3.8.2'/>
+      <directive name='uses' value='junit.framework'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='junit.awtui'/>
+      <attribute name='version' type='Version' value='3.8.2'/>
+      <attribute name='bundle-symbolic-name' value='junit.osgi'/>
+      <attribute name='bundle-version' type='Version' value='3.8.2'/>
+      <directive name='uses' value='junit.runner,junit.framework'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='junit.textui'/>
+      <attribute name='version' type='Version' value='3.8.2'/>
+      <attribute name='bundle-symbolic-name' value='junit.osgi'/>
+      <attribute name='bundle-version' type='Version' value='3.8.2'/>
+      <directive name='uses' value='junit.framework,junit.runner'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='junit.extensions'/>
+      <attribute name='version' type='Version' value='3.8.2'/>
+      <attribute name='bundle-symbolic-name' value='junit.osgi'/>
+      <attribute name='bundle-version' type='Version' value='3.8.2'/>
+      <directive name='uses' value='junit.framework'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.border)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.event)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.tree)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=junit.awtui)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=junit.extensions)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=junit.framework)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=junit.runner)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=junit.swingui)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=junit.swingui.icons)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=junit.textui)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+  </resource>
+</repository>

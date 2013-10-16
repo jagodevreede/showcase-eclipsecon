@@ -1,0 +1,16 @@
+Test-Cases: ${classes;CONCRETE;EXTENDS;junit.framework.TestCase}
+-runbundles: org.mockito.mockito-all
+Private-Package: webshop.orders.tests
+-runee: JavaSE-1.6
+-runvm: -ea
+-runfw: org.apache.felix.framework
+-buildpath: osgi.core;version='[4.2,5)',\
+	osgi.cmpn,\
+	junit.osgi,\
+	org.mockito.mockito-all,\
+	webshop.orders.api;version=latest,\
+	org.apache.felix.dependencymanager,\
+	org.amdatu.bndtools.test,\
+	org.mongodb.mongo-java-driver,\
+	org.amdatu.mongo
+-runsystempackages: sun.reflect

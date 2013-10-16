@@ -1,0 +1,13 @@
+<div class="navbar">
+	  <div class="navbar-inner">
+	    <a class="brand" href="#">Modularity Showcase</a>
+	    <ul class="nav">
+	      <li><a href="#/products">Shop</a></li>	      
+		  <li ng-repeat="category in categories"><a href="#/products/{{category}}">{{category}}</a></li>
+		  <li><a href="#/basket"><i class="icon-shopping-cart"></i> Checkout <span class="badge">{{basket.size()}}</span></a></li>
+		  <li><a href="#/orders"><i class="icon-tasks"></i> My orders</a></li>
+		  <input type="text" class="search-query" placeholder="Search" ng-model="search">
+	  </ul>
+
+  </div>
+</div>

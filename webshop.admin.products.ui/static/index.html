@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="productadmin">
+  <head>
+    <title>Modularity Showcase</title>
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  	<link rel="stylesheet" type="text/css" href="css/webshop.css" />
+  	<script src="js/lib/jquery-1.9.1.min.js"></script>
+    <script src="js/lib/angular.js"></script>
+    <script src="js/lib/angular-sanitize.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/admin.products.app.js"></script>
+    <script src="js/admin.products.controllers.js"></script>
+    <script src="/admin/ui/js/admin.general.directives.js"></script>
+  </head>
+  <body>
+	  <navbar></navbar>
+
+
+    <ng-view></ng-view>
+  </body>
+</html>

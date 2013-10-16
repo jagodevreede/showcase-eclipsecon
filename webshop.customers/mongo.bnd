@@ -1,0 +1,2 @@
+Bundle-Activator: webshop.customers.mongo.Activator
+Private-Package: webshop.customers.mongo

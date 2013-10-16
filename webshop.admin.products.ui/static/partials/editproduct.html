@@ -1,0 +1,30 @@
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="inputName">Product name</label>
+    <div class="controls">
+      <input type="text" id="inputName" placeholder="Name" ng-model="product.name">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputPrice">Price</label>
+    <div class="controls">
+      <input type="text" id="inputPrice" placeholder="Price" ng-model="product.price">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputCategory">Category</label>
+    <div class="controls">
+      <select ng-model="existingCategory" ng-options="category for category in categories">
+         <option value="">- Category -</option>
+      </select>
+      <input type="text" id="inputCategory" placeholder="New category" ng-model="newCategory">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <div class="btn btn-primary" ng-click="save()">Save</div>
+      <div class="btn btn-danger" ng-click="delete()">Delete</div>
+      <a href="#/products" class="btn">Cancel</a>
+    </div>
+  </div>
+</form>

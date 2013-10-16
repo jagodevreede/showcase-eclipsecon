@@ -1,0 +1,15 @@
+<table class="table table-striped table-bordered" ng-show="category != undefined">
+	<tr>
+		<th>Name</th>		
+		<th></th>
+	</tr>
+	<tr ng-repeat="product in products">
+		<td>{{product.name}}</td>
+		<td><div ng-click="inBasket(product)" class="btn btn-small" href="#"><i class="icon-shopping-cart"></i> In basket</div></td>
+	</tr>
+</table>
+
+<div ng-show="category == undefined" class="hero-unit">
+	<h1>Modularity Showcase</h1>
+	<p>This is the frontend of the modularity showcase application. Click a category to start browsing products</p>
+</div>

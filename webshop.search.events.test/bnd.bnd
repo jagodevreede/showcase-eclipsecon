@@ -1,0 +1,15 @@
+Test-Cases: ${classes;CONCRETE;EXTENDS;junit.framework.TestCase}
+-runbundles: org.mockito.mockito-all
+Private-Package: webshop.search.events.test
+-runee: JavaSE-1.6
+-runvm: -ea
+-runfw: org.apache.felix.framework
+-buildpath: osgi.core;version='[4.2,5)',\
+	osgi.cmpn,\
+	junit.osgi,\
+	org.amdatu.bndtools.test,\
+	org.apache.felix.dependencymanager,\
+	webshop.search.api;version=latest,\
+	org.mongodb.mongo-java-driver,\
+	org.amdatu.mongo
+-runsystempackages: sun.reflect

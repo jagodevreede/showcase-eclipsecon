@@ -1,0 +1,2 @@
+Bundle-Activator: webshop.orders.rest.Activator
+Private-Package: webshop.orders.rest

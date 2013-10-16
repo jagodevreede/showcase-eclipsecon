@@ -1,0 +1,8 @@
+-buildpath: osgi.core,\
+	osgi.cmpn,\
+	org.apache.felix.dependencymanager,\
+	javax.servlet,\
+	org.amdatu.web.rest.doc,\
+	org.amdatu.web.rest.jaxrs,\
+	org.amdatu.security.tokenprovider.api
+-sub: *.bnd

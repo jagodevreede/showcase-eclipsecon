@@ -1,0 +1,7 @@
+Private-Package: webshop.admin.security
+-buildpath: javax.servlet,\
+	org.apache.felix.dependencymanager,\
+	osgi.core,\
+	org.amdatu.security.tokenprovider.api,\
+	webshop.admin.login.api;version=latest
+Bundle-Activator: webshop.admin.security.Activator

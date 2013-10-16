@@ -1,0 +1,2 @@
+Bundle-Activator: webshop.admin.login.rest.Activator
+Private-Package: webshop.admin.login.rest

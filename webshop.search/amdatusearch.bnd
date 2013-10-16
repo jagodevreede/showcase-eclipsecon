@@ -1,0 +1,2 @@
+Bundle-Activator: webshop.search.amdatusearch.Activator
+Private-Package: webshop.search.amdatusearch

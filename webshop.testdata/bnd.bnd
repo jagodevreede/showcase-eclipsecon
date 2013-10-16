@@ -1,0 +1,14 @@
+Bundle-Activator: webshop.testdata.Activator
+Private-Package: webshop.testdata
+-buildpath: osgi.core,\
+	osgi.cmpn,\
+	org.apache.felix.dependencymanager,\
+	javax.servlet,\
+	org.amdatu.web.rest.doc,\
+	org.amdatu.web.rest.jaxrs,\
+	org.amdatu.security.tokenprovider.api,\
+	webshop.customers.api;version=latest,\
+	webshop.orders.api;version=latest,\
+	webshop.products.api;version=latest,\
+	org.mongodb.mongo-java-driver,\
+	org.amdatu.mongo

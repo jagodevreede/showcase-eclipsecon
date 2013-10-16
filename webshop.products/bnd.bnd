@@ -1,0 +1,16 @@
+-buildpath: osgi.core,\
+	osgi.cmpn,\
+	org.apache.felix.dependencymanager,\
+	org.amdatu.mongo,\
+	jackson-core-asl,\
+	jackson-mapper-asl,\
+	de.undercouch.bson4jackson,\
+	net.vz.mongodb.jackson.mongo-jackson-mapper,\
+	org.mongodb.mongo-java-driver,\
+	javax.servlet,\
+	org.amdatu.web.rest.doc,\
+	org.amdatu.web.rest.jaxrs,\
+	org.amdatu.security.tokenprovider.api
+-sub: mongo.bnd,\
+	rest.bnd,\
+	api.bnd

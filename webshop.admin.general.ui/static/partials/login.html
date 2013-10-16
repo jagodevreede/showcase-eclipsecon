@@ -1,0 +1,22 @@
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="inputEmail">Username</label>
+    <div class="controls">
+      <input type="text" id="inputUsername" placeholder="Username" ng-model="logindetails.username">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputPassword">Password</label>
+    <div class="controls">
+      <input type="password" id="inputPassword" placeholder="Password" ng-model="logindetails.password">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <div class="btn btn-primary" ng-click="login()">Sign in</div>
+    </div>
+    <div class="controls">
+    	<div class="error">{{errormessage}}</div>
+    </div>
+  </div>
+</form>

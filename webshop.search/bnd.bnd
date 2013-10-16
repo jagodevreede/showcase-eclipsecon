@@ -1,0 +1,9 @@
+-buildpath: osgi.core,\
+	osgi.cmpn,\
+	org.apache.felix.dependencymanager,\
+	webshop.products.api;version=latest,\
+	org.amdatu.search.api,\
+	org.amdatu.web.rest.jaxrs,\
+	org.amdatu.scheduling.api,\
+	org.amdatu.scheduling.quartz
+-sub: *.bnd

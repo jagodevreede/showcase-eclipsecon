@@ -1,0 +1,19 @@
+<select ng-model="category" ng-options="category for category in categories">
+    <option value="">- Category -</option>
+</select>
+
+<a href="#/products/add" class="btn">New product</a>
+
+<table class="table table-striped table-bordered">
+	<tr>
+		<th>Name</th>		
+		<th>Price</th>
+		<th>Edit</th>
+	</tr>
+	<tr ng-repeat="product in products">
+		<td>{{product.name}}</td>
+		<td>{{product.price}}</td>
+		<td><a href="#/products/edit/{{product._id}}" class="btn">Edit</a></td>
+	</tr>
+</table>
+

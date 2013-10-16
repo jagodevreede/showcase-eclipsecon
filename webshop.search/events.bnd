@@ -1,0 +1,2 @@
+Private-Package: webshop.search.events
+Bundle-Activator: webshop.search.events.Activator
