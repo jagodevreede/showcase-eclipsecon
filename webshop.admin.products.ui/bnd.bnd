@@ -1,3 +1,4 @@
 Include-Resource: admin/products=static
 X-Web-Resource: /admin/products
 X-Web-Resource-Version: 1.0
+Bundle-Version: 1.0.0

@@ -15,3 +15,4 @@ Private-Package: webshop.orders.tests
 	org.amdatu.mongo,\
 	webshop.customers.api;version=latest
 -runsystempackages: sun.reflect
+Bundle-Version: 1.0.0

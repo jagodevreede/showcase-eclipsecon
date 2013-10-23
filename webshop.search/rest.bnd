@@ -1,2 +1,3 @@
 Private-Package: webshop.search.rest
 Bundle-Activator: webshop.search.rest.Activator
+Bundle-Version: 1.0.0

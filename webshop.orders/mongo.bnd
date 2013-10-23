@@ -1,2 +1,3 @@
 Bundle-Activator: webshop.orders.mongo.Activator
 Private-Package: webshop.orders.mongo
+Bundle-Version: 1.0.0

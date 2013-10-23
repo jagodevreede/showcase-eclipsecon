@@ -1,2 +1,3 @@
 Bundle-Activator: webshop.products.mongo.Activator
 Private-Package: webshop.products.mongo
+Bundle-Version: 1.0.0

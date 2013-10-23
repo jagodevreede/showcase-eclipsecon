@@ -1,2 +1,3 @@
 Bundle-Activator: webshop.search.amdatusearch.Activator
 Private-Package: webshop.search.amdatusearch
+Bundle-Version: 1.0.0

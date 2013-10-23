@@ -1,2 +1,3 @@
 Private-Package: webshop.customer.login.rest
 Bundle-Activator: webshop.customer.login.rest.Activator
+Bundle-Version: 1.0.0

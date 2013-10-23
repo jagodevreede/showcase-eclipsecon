@@ -13,3 +13,4 @@ Private-Package: webshop.products.tests
 	org.mongodb.mongo-java-driver,\
 	org.amdatu.mongo
 -runsystempackages: sun.reflect
+Bundle-Version: 1.0.0

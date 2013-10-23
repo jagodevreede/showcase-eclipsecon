@@ -1,2 +1,3 @@
 Bundle-Activator: webshop.customers.mongo.Activator
 Private-Package: webshop.customers.mongo
+Bundle-Version: 1.0.0

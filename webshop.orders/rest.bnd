@@ -1,2 +1,3 @@
 Bundle-Activator: webshop.orders.rest.Activator
 Private-Package: webshop.orders.rest
+Bundle-Version: 1.0.0

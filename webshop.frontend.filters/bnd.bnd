@@ -18,3 +18,4 @@ Private-Package: webshop.frontend.filters.redirect
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.log)'
+Bundle-Version: 1.0.0

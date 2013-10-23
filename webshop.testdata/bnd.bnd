@@ -12,3 +12,4 @@ Private-Package: webshop.testdata
 	webshop.products.api;version=latest,\
 	org.mongodb.mongo-java-driver,\
 	org.amdatu.mongo
+Bundle-Version: 1.0.0

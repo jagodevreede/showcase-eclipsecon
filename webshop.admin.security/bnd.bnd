@@ -5,3 +5,4 @@ Private-Package: webshop.admin.security
 	org.amdatu.security.tokenprovider.api,\
 	webshop.admin.login.api;version=latest
 Bundle-Activator: webshop.admin.security.Activator
+Bundle-Version: 1.0.0

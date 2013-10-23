@@ -1,3 +1,4 @@
 Private-Package: webshop.admin.login.rest,\
 	webshop.admin.login.configadminprovider
 Bundle-Activator: webshop.admin.login.configadminprovider.Activator
+Bundle-Version: 1.0.0

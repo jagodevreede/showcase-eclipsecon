@@ -1,2 +1,3 @@
 Private-Package: webshop.search.scheduledindexer
 Bundle-Activator: webshop.search.scheduledindexer.Activator
+Bundle-Version: 1.0.0
