@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1463507/ace/trunk/run-client/conf/org.apache.ace.connectionfactory
+END
+obr.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1463507/ace/trunk/run-client/conf/org.apache.ace.connectionfactory/obr.cfg
+END
+auditlog.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1463507/ace/trunk/run-client/conf/org.apache.ace.connectionfactory/auditlog.cfg
+END
+replication.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1463507/ace/trunk/run-client/conf/org.apache.ace.connectionfactory/replication.cfg
+END
+client.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1463507/ace/trunk/run-client/conf/org.apache.ace.connectionfactory/client.cfg
+END
+repository.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1463507/ace/trunk/run-client/conf/org.apache.ace.connectionfactory/repository.cfg
+END
+deployment.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1463507/ace/trunk/run-client/conf/org.apache.ace.connectionfactory/deployment.cfg
+END

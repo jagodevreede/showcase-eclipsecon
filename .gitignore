@@ -2,3 +2,5 @@ run/generated
 .gradle
 settings.gradle
 .metadata
+autodeploy/bundle-cache
+release

@@ -1,0 +1,41 @@
+echo "start deploy"
+sleep 1000
+
+sourceindex = (repo:index ../release)
+sourcerepo  = (repo:repo R5 $sourceindex)
+targetrepo = (repo:repo OBR "http://localhost:8084/obr/repository.xml")
+releaserepo = (repo:repo OBR "http://localhost:8083/obr/repository.xml")
+
+echo "Deploying release resources"
+deployed = repo:cd $releaserepo $sourcerepo $targetrepo
+
+echo "Opening client workspace"
+workspace = (ace:cw)
+
+echo "Creating new artifacts"
+each $deployed {
+  identity = $it getIdentity
+  version = $it getVersion
+  name = "$identity - $version"
+  url = $it getUrl
+  mimetype = $it getMimetype
+  if { (coll:first ($workspace la "(&(Bundle-SymbolicName=$identity)(Bundle-Version=$version))")) } { 
+    echo "$name already exists"
+  } { 
+    $workspace ca [ 
+	  artifactName="$name" 
+	  url="$url" 
+	  mimetype="$mimetype" 
+	  Bundle-SymbolicName="$identity" 
+	  Bundle-Version="$version" 
+    ]
+  }
+  
+}
+
+echo "Committing workspace"
+$workspace commit
+
+sleep 1000
+
+misc:shutdown 1000

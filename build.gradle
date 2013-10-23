@@ -33,10 +33,9 @@ task generatesettings << {
 task release() << {
     delete "release"
 
-    ant.taskdef(name: 'bndrelease', classname: 'aQute.bnd.ant.RunconfigToDistributionTask', classpath: 'cnf/buildplugins/biz.aQute.bnd/biz.aQute.bnd-2.2.0.jar')
+    ant.taskdef(name: 'bndrelease', classname: 'aQute.bnd.ant.RunconfigToDistributionTask', classpath: 'cnf/plugins/biz.aQute.bnd/biz.aQute.bnd-2.2.0.jar')
     ant.bndrelease(allowsnapshots: true, bndfile: 'run/webshop.bndrun', rootdir: './', outputdir: 'release')   
-
-    delete fileTree(dir: 'release', includes: ['org.apache.felix.configadmin*', 'org.apache.felix.fileinstall*', 'org.amdatu.core.fileinstall.metatype*', 'osgi.cmpn*', 'org.apache.felix.dependencymanager-*', 'org.apache.felix.eventadmin*', 'org.amdatu.web.rest.doc.swagger*'])
+    delete fileTree(dir: 'build/release', includes: ['*.test'])
 }
 
 task prepareObrRelease(dependsOn: release) << {
