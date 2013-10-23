@@ -1,4 +1,8 @@
 echo "start deploy"
+SCOPE = gogo:*
+addcommand context ${.context}
+addcommand system (((${.context} bundles) 0) loadclass java.lang.System)
+
 sleep 1000
 
 sourceindex = (repo:index ../release)
@@ -38,4 +42,5 @@ $workspace commit
 
 sleep 1000
 
-misc:shutdown 1000
+echo "bye"
+exit 0
