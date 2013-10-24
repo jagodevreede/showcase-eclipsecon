@@ -64,6 +64,24 @@ subprojects { p ->
     repositories {
        mavenCentral()
     }
+    
+    configurations {
+    jdt
+}
+
+dependencies {
+    jdt "org.eclipse.jdt.core.compiler:ecj:4.2.2"
+}
+
+compileJava {
+    options.compiler = "org.eclipse.jdt.core.JDTCompilerAdapter"
+    doFirst {
+        ClassLoader antClassLoader = org.apache.tools.ant.Project.class.classLoader
+        configurations.jdt.each { File f ->
+            antClassLoader.addURL(f.toURI().toURL())
+        }
+    }
+}
 
     aQute.bnd.build.Project bndProject
     bndProject = workspace.getProject(p.projectDir)
