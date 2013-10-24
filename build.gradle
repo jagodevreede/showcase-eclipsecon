@@ -133,6 +133,8 @@ compileJava {
 
     clean.doLast {
         p.file('generated').deleteDir()
+        p.file('bin').deleteDir()
+        p.file('bin_test').deleteDir()
     }
 }
 

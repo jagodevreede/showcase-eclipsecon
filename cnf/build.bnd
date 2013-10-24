@@ -16,8 +16,8 @@
 
 #java:         java
 #javac:        javac
-#javac.source: 1.5
-#javac.target: 1.5
+javac.source: 1.7
+javac.target: 1.7
 #javac.debug:  on
 
 #-sources:       true
@@ -32,4 +32,4 @@
 # Git-SHA: ${system-allow-fail;git rev-list -1 HEAD}
 
 -removeheaders: Bnd-LastModified,Tool,Created-By
--baseline:*
+#-baseline:*
