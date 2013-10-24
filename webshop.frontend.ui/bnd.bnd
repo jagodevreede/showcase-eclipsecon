@@ -1,4 +1,4 @@
 Include-Resource: ui=static
 X-Web-Resource: /ui
 X-Web-Resource-Version: 1.0
-Bundle-Version: 1.0.1
+Bundle-Version: 1.0.0
